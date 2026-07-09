@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"><modelVersion>4.0.0</modelVersion>
 <groupId>io.github.hiwepy</groupId><artifactId>shiro-saml-extension</artifactId><version>1.0.0-SNAPSHOT</version><packaging>jar</packaging>
 <repositories><repository><id>spring-release</id><url>https://build.shibboleth.net/nexus/content/repositories/releases/</url></repository></repositories>
-<properties><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding><java.version>1.8</java.version><opensaml.version>3.4.2</opensaml.version><java-support.version>7.3.0</java-support.version></properties>
+<properties><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding><java.version>17</java.version><opensaml.version>3.4.2</opensaml.version><java-support.version>7.3.0</java-support.version></properties>
 <dependencies>
 <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><version>1.18.30</version><scope>provided</scope></dependency>
 <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>1.7.32</version></dependency>

@@ -59,7 +59,11 @@
         <java-support.version>7.3.0</java-support.version>
         <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
         <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
-    </properties>
+    
+		<shiro-core.version>1.13.0</shiro-core.version>
+		<shiro-web.version>1.13.0</shiro-web.version>
+		<easy4j-shiro-biz.version>2.0.x.20260630-SNAPSHOT</easy4j-shiro-biz.version>
+		<javax-servlet-api.version>4.0.1</javax-servlet-api.version></properties>
 
     <!-- 依赖版本统一管理（dependencyManagement） -->
     <dependencyManagement>
@@ -81,19 +85,19 @@
             <dependency>
                 <groupId>org.apache.shiro</groupId>
                 <artifactId>shiro-core</artifactId>
-                <version>1.13.0</version>
+                <version>${shiro-core.version}</version>
             </dependency>
             <!-- For Shiro -->
             <dependency>
                 <groupId>org.apache.shiro</groupId>
                 <artifactId>shiro-web</artifactId>
-                <version>1.13.0</version>
+                <version>${shiro-web.version}</version>
             </dependency>
             <!-- For Easy4j Shiro -->
             <dependency>
                 <groupId>io.github.easy4j</groupId>
                 <artifactId>shiro-biz</artifactId>
-                <version>2.0.x.20260630-SNAPSHOT</version>
+                <version>${easy4j-shiro-biz.version}</version>
             </dependency>
             <!-- For OpenSAML -->
             <dependency>
@@ -111,7 +115,7 @@
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
-                <version>4.0.1</version>
+                <version>${javax-servlet-api.version}</version>
                 <scope>provided</scope>
             </dependency>
         </dependencies>

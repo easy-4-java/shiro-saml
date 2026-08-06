@@ -1,6 +1,6 @@
 # shiro-saml-extension
 
-![Java](https://img.shields.io/badge/Java-21-orange) ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
+[English](./README.md) | [简体中文](./README.zh-CN.md)
 
 SAML authentication extension for Apache Shiro, built on OpenSAML 3 and `shiro-biz`. It provides SAML authentication tokens, a SAML-aware subject factory, OpenSAML object-building utilities and SAML-specific authentication exceptions.
 

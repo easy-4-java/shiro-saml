@@ -2,6 +2,8 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
+[![Java](https://img.shields.io/badge/Java-21-orange)](https://github.com/easy-4-java/shiro-saml-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+
 Apache Shiro 的 SAML 认证扩展，基于 OpenSAML 3 与 `shiro-biz`。提供 SAML 认证 Token、SAML 感知的 Subject 工厂、OpenSAML 对象构建工具与 SAML 专属认证异常。
 
 ## 目录

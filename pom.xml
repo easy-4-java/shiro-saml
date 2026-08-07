@@ -38,6 +38,10 @@
     </developers>
     <repositories>
         <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
             <id>spring-release</id>
             <url>https://build.shibboleth.net/nexus/content/repositories/releases/</url>
         </repository>

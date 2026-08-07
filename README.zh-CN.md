@@ -1,10 +1,10 @@
-# shiro-saml-extension
+# shiro-saml
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-[![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/shiro-saml-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+[![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/shiro-saml) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
-Apache Shiro 的 SAML 认证扩展，基于 OpenSAML 3 与 `shiro-biz`。提供 SAML 认证 Token、SAML 感知的 Subject 工厂、OpenSAML 对象构建工具与 SAML 专属认证异常。
+Apache Shiro 的 SAML 认证扩展，基于 OpenSAML 3 与 `shiro-extension-spring`。提供 SAML 认证 Token、SAML 感知的 Subject 工厂、OpenSAML 对象构建工具与 SAML 专属认证异常。
 
 ## 目录
 
@@ -24,7 +24,7 @@ Apache Shiro 的 SAML 认证扩展，基于 OpenSAML 3 与 `shiro-biz`。提供 
 
 **是什么**
 
-`shiro-saml-extension` 为基于 Shiro 的应用补充 SAML 构建块：
+`shiro-saml` 为基于 Shiro 的应用补充 SAML 构建块：
 
 - `SamlToken` / `Saml2Token` —— `HostAuthenticationToken` 实现，其主体与凭证即 SAML 请求（断言）字符串，携带 host 与记住我状态。
 - `SamlSubjectFactory` —— 以会话创建开启/关闭模式为 SAML 流程创建 Shiro Subject。
@@ -55,7 +55,7 @@ Apache Shiro 的 SAML 认证扩展，基于 OpenSAML 3 与 `shiro-biz`。提供 
 | 认证上下文比较 | 可用 | `AuthnContextComparisonType` 枚举。 |
 | SAML 异常 | 可用 | `ExpiredSamlException`、`IncorrectSamlException`、`InvalidSamlToken`、`NotObtainedSamlException`。 |
 
-> 状态以 `feature/1.0.x` 分支上的 `1.0.x.20260630-SNAPSHOT` 为准。
+> 状态以 `feature/3.0.x` 分支上的 `1.0.x.20260630-SNAPSHOT` 为准。
 
 ## 3. Requirements & Compatibility
 
@@ -66,7 +66,7 @@ Apache Shiro 的 SAML 认证扩展，基于 OpenSAML 3 与 `shiro-biz`。提供 
 | Apache Shiro | 1.13.0（`shiro-core`、`shiro-web`） |
 | OpenSAML | 3.4.2（`opensaml-core`） |
 | OpenSAML 支撑库 | 7.3.0（`java-support`） |
-| easy4j 依赖 | `io.github.easy4j:shiro-biz`（`1.0.x.20260630-SNAPSHOT`） |
+| easy4j 依赖 | `io.github.easy4j:shiro-extension-spring`（`1.0.x.20260630-SNAPSHOT`） |
 
 **版本线**
 
@@ -105,14 +105,14 @@ Apache Shiro 的 SAML 认证扩展，基于 OpenSAML 3 与 `shiro-biz`。提供 
 
 ## 5. Installation
 
-该构件尚未发布到 Maven Central。请从项目配置的制品仓库（阿里云制品仓库）获取，或从源码本地安装；`feature/1.0.x` 分支当前使用的快照版本为 `1.0.x.20260630-SNAPSHOT`。
+该构件尚未发布到 Maven Central。请从项目配置的制品仓库（阿里云制品仓库）获取，或从源码本地安装；`feature/3.0.x` 分支当前使用的快照版本为 `1.0.x.20260630-SNAPSHOT`。
 
 **Maven**
 
 ```xml
 <dependency>
     <groupId>io.github.easy4j</groupId>
-    <artifactId>shiro-saml-extension</artifactId>
+    <artifactId>shiro-saml-spring</artifactId>
     <version>1.0.x.20260630-SNAPSHOT</version>
 </dependency>
 ```
@@ -120,7 +120,7 @@ Apache Shiro 的 SAML 认证扩展，基于 OpenSAML 3 与 `shiro-biz`。提供 
 **Gradle**
 
 ```groovy
-implementation 'io.github.easy4j:shiro-saml-extension:1.0.x.20260630-SNAPSHOT'
+implementation 'io.github.easy4j:shiro-saml-spring:1.0.x.20260630-SNAPSHOT'
 ```
 
 ## 6. Quick Start
@@ -188,6 +188,6 @@ String assertionId = OpenSAMLUtils.generateSecureRandomId();
 
 ## 11. Contributing & License
 
-欢迎参与贡献——请在 [GitHub 仓库](https://github.com/easy-4-java/shiro-saml-extension) 提交 Issue 或 Pull Request。
+欢迎参与贡献——请在 [GitHub 仓库](https://github.com/easy-4-java/shiro-saml) 提交 Issue 或 Pull Request。
 
 本项目基于 **Apache License 2.0** 开源。详见 [LICENSE](LICENSE)。

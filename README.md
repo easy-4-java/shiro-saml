@@ -1,10 +1,10 @@
-# shiro-saml-extension
+# shiro-saml
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-[![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/shiro-saml-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+[![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/shiro-saml) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
-SAML authentication extension for Apache Shiro, built on OpenSAML 3 and `shiro-biz`. It provides SAML authentication tokens, a SAML-aware subject factory, OpenSAML object-building utilities and SAML-specific authentication exceptions.
+SAML authentication extension for Apache Shiro, built on OpenSAML 3 and `shiro-extension-spring`. It provides SAML authentication tokens, a SAML-aware subject factory, OpenSAML object-building utilities and SAML-specific authentication exceptions.
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ SAML authentication extension for Apache Shiro, built on OpenSAML 3 and `shiro-b
 
 **What it is**
 
-`shiro-saml-extension` adds SAML building blocks to Shiro-based applications:
+`shiro-saml` adds SAML building blocks to Shiro-based applications:
 
 - `SamlToken` / `Saml2Token` — `HostAuthenticationToken` implementations whose principal and credentials are the SAML request (assertion) string, carrying host and remember-me state.
 - `SamlSubjectFactory` — creates Shiro subjects in a session-creation enabled/disabled mode for SAML flows.
@@ -55,7 +55,7 @@ SAML authentication extension for Apache Shiro, built on OpenSAML 3 and `shiro-b
 | Authn context comparison | Available | `AuthnContextComparisonType` enum. |
 | SAML exceptions | Available | `ExpiredSamlException`, `IncorrectSamlException`, `InvalidSamlToken`, `NotObtainedSamlException`. |
 
-> Status is reported as of `1.0.x.20260630-SNAPSHOT` on the `feature/1.0.x` branch.
+> Status is reported as of `1.0.x.20260630-SNAPSHOT` on the `feature/3.0.x` branch.
 
 ## 3. Requirements & Compatibility
 
@@ -66,7 +66,7 @@ SAML authentication extension for Apache Shiro, built on OpenSAML 3 and `shiro-b
 | Apache Shiro | 1.13.0 (`shiro-core`, `shiro-web`) |
 | OpenSAML | 3.4.2 (`opensaml-core`) |
 | OpenSAML support lib | 7.3.0 (`java-support`) |
-| easy4j dependency | `io.github.easy4j:shiro-biz` (`1.0.x.20260630-SNAPSHOT`) |
+| easy4j dependency | `io.github.easy4j:shiro-extension-spring` (`1.0.x.20260630-SNAPSHOT`) |
 
 **Version lines**
 
@@ -94,7 +94,7 @@ SAML authentication extension for Apache Shiro, built on OpenSAML 3 and `shiro-b
         +-- AuthnContextComparisonType (context enforcement)
 ```
 
-This is a **single-module** project (packaging `jar`), classes under `org.apache.shiro.spring.boot.saml`:
+This is a multi-module project (packaging `pom`), classes under `org.apache.shiro.spring.boot.saml`:
 
 | Package | Role |
 | :--- | :--- |
@@ -105,14 +105,14 @@ This is a **single-module** project (packaging `jar`), classes under `org.apache
 
 ## 5. Installation
 
-The artifact is not yet published to Maven Central. Resolve it from the project's configured artifact repository (Aliyun Packages) or install it locally from source; the snapshot version currently used on the `feature/1.0.x` branch is `1.0.x.20260630-SNAPSHOT`.
+The artifact is not yet published to Maven Central. Resolve it from the project's configured artifact repository (Aliyun Packages) or install it locally from source; the snapshot version currently used on the `feature/3.0.x` branch is `1.0.x.20260630-SNAPSHOT`.
 
 **Maven**
 
 ```xml
 <dependency>
     <groupId>io.github.easy4j</groupId>
-    <artifactId>shiro-saml-extension</artifactId>
+    <artifactId>shiro-saml-spring</artifactId>
     <version>1.0.x.20260630-SNAPSHOT</version>
 </dependency>
 ```
@@ -120,7 +120,7 @@ The artifact is not yet published to Maven Central. Resolve it from the project'
 **Gradle**
 
 ```groovy
-implementation 'io.github.easy4j:shiro-saml-extension:1.0.x.20260630-SNAPSHOT'
+implementation 'io.github.easy4j:shiro-saml-spring:1.0.x.20260630-SNAPSHOT'
 ```
 
 ## 6. Quick Start
@@ -188,6 +188,6 @@ Maintenance strategy: the 1.0.x line keeps JDK 8 compatibility for legacy deploy
 
 ## 11. Contributing & License
 
-Contributions are welcome — please open an issue or a pull request on the [GitHub repository](https://github.com/easy-4-java/shiro-saml-extension).
+Contributions are welcome — please open an issue or a pull request on the [GitHub repository](https://github.com/easy-4-java/shiro-saml).
 
 This project is licensed under the **Apache License 2.0**. See [LICENSE](LICENSE) for details.

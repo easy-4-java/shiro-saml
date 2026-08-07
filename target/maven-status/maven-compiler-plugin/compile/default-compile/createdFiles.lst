@@ -1,9 +1,0 @@
-org/apache/shiro/spring/boot/saml/exception/IncorrectSamlException.class
-org/apache/shiro/spring/boot/saml/exception/InvalidSamlToken.class
-org/apache/shiro/spring/boot/saml/SamlSubjectFactory.class
-org/apache/shiro/spring/boot/saml/exception/ExpiredSamlException.class
-org/apache/shiro/spring/boot/saml/token/SamlToken.class
-org/apache/shiro/spring/boot/saml/utils/OpenSAMLUtils.class
-org/apache/shiro/spring/boot/saml/AuthnContextComparisonType.class
-org/apache/shiro/spring/boot/saml/token/Saml2Token.class
-org/apache/shiro/spring/boot/saml/exception/NotObtainedSamlException.class

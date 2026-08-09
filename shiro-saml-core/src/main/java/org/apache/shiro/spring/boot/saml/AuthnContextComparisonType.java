@@ -16,7 +16,9 @@
 package org.apache.shiro.spring.boot.saml;
 
 /**
- * TODO
+ * SAML Authentication Context Comparison types that define how the identity provider
+ * should evaluate the requested authentication context class.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
  */
 public enum AuthnContextComparisonType {

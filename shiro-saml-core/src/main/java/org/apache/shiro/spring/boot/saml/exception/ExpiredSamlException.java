@@ -18,7 +18,8 @@ package org.apache.shiro.spring.boot.saml.exception;
 import org.apache.shiro.authc.AuthenticationException;
 
 /**
- * TODO
+ * Exception thrown when a SAML assertion has expired.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
  */
 @SuppressWarnings("serial")

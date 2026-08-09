@@ -2,6 +2,11 @@ package org.apache.shiro.spring.boot.saml.exception;
 
 import org.apache.shiro.authc.AuthenticationException;
 
+/**
+ * Exception thrown when a required SAML assertion is not present in the request.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ */
 @SuppressWarnings("serial")
 public class NotObtainedSamlException extends AuthenticationException {
 	

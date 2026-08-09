@@ -25,7 +25,8 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.subject.SubjectContext;
 
 /**
- * SAML SubjectFactory that preserves remember-me semantics for SAML tokens.
+ * Subject factory that preserves remember-me semantics for SAML tokens.
+ * Disables session creation when the SAML token has the remember-me flag set.
  *
  * @author [@Loong Wan](https://github.com/loong10k)
  */

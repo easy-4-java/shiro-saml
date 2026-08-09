@@ -2,6 +2,11 @@ package org.apache.shiro.spring.boot.saml.exception;
 
 import org.apache.shiro.authc.AuthenticationException;
 
+/**
+ * Exception thrown when a SAML assertion is incorrect or malformed.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ */
 @SuppressWarnings("serial")
 public class IncorrectSamlException extends AuthenticationException {
 	

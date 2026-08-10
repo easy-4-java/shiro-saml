@@ -25,7 +25,7 @@ import net.shibboleth.utilities.java.support.security.RandomIdentifierGeneration
 /**
  * Utilities for creating OpenSAML objects.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @SuppressWarnings("unchecked")
 public class OpenSAMLUtils {

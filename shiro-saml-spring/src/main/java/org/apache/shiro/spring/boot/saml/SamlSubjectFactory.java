@@ -27,7 +27,7 @@ import org.apache.shiro.subject.SubjectContext;
 /**
  * SAML SubjectFactory that preserves remember-me semantics for SAML tokens.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class SamlSubjectFactory extends SessionCreationEnabledSubjectFactory {
 

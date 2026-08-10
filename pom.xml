@@ -24,16 +24,23 @@
         <repository><id>spring-release</id><url>https://build.shibboleth.net/nexus/content/repositories/releases/</url></repository>
     </repositories>
     <properties>
-        <revision>3.0.x.20260630-SNAPSHOT</revision>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>21</java.version>
-        <shiro.version>2.2.1</shiro.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <revision>3.0.x.20260630-SNAPSHOT</revision>
+
+        <!-- Dependency versions -->
         <easy4j-shiro-extension.version>3.0.x.20260630-SNAPSHOT</easy4j-shiro-extension.version>
-        <opensaml.version>3.4.2</opensaml.version>
         <java-support.version>7.3.0</java-support.version>
+        <opensaml.version>3.4.2</opensaml.version>
+        <shiro.version>2.2.1</shiro.version>
+
+        <!-- Maven Plugin versions -->
+        <maven-central-publishing-plugin.version>0.11.0</maven-central-publishing-plugin.version>
         <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
+        <maven-jacoco-plugin.version>0.8.15</maven-jacoco-plugin.version>
         <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
-    <maven.compiler.release>${java.version}</maven.compiler.release><maven-jacoco-plugin.version>0.8.15</maven-jacoco-plugin.version><maven-central-publishing-plugin.version>0.11.0</maven-central-publishing-plugin.version></properties>
+    </properties>
     <dependencyManagement><dependencies>
         <dependency><groupId>io.github.easy4j</groupId><artifactId>shiro-saml-core</artifactId><version>${revision}</version></dependency>
         <dependency><groupId>io.github.easy4j</groupId><artifactId>shiro-extension-spring</artifactId><version>${easy4j-shiro-extension.version}</version></dependency>

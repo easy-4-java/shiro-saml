@@ -13,14 +13,14 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.apache.shiro.spring.boot.saml.exception;
+package org.apache.shiro.saml.exception;
 
 import org.apache.shiro.authc.AuthenticationException;
 
 /**
  * Exception thrown when a SAML assertion has expired.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @SuppressWarnings("serial")
 public class ExpiredSamlException extends AuthenticationException {

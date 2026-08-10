@@ -13,14 +13,14 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.apache.shiro.spring.boot.saml;
+package org.apache.shiro.saml;
 
 import java.util.Objects;
 
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.biz.web.mgt.SessionCreationEnabledSubjectFactory;
-import org.apache.shiro.spring.boot.saml.token.Saml2Token;
-import org.apache.shiro.spring.boot.saml.token.SamlToken;
+import org.apache.shiro.saml.token.Saml2Token;
+import org.apache.shiro.saml.token.SamlToken;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.subject.SubjectContext;
 
@@ -28,7 +28,7 @@ import org.apache.shiro.subject.SubjectContext;
  * Subject factory that preserves remember-me semantics for SAML tokens.
  * Disables session creation when the SAML token has the remember-me flag set.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class SamlSubjectFactory extends SessionCreationEnabledSubjectFactory {
 

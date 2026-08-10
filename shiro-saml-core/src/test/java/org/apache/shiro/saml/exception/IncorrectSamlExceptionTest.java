@@ -1,4 +1,4 @@
-package org.apache.shiro.spring.boot.saml.exception;
+package org.apache.shiro.saml.exception;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -6,41 +6,41 @@ import org.apache.shiro.authc.AuthenticationException;
 import org.junit.jupiter.api.Test;
 
 /**
- * Unit tests for {@link InvalidSamlToken}.
+ * Unit tests for {@link IncorrectSamlException}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
-class InvalidSamlTokenTest {
+class IncorrectSamlExceptionTest {
 
     @Test
     void shouldExtendAuthenticationException() {
-        assertThat(new InvalidSamlToken()).isInstanceOf(AuthenticationException.class);
+        assertThat(new IncorrectSamlException()).isInstanceOf(AuthenticationException.class);
     }
 
     @Test
     void defaultConstructorShouldCreateException() {
-        InvalidSamlToken ex = new InvalidSamlToken();
+        IncorrectSamlException ex = new IncorrectSamlException();
         assertThat(ex.getMessage()).isNull();
     }
 
     @Test
     void messageConstructorShouldPreserveMessage() {
-        InvalidSamlToken ex = new InvalidSamlToken("invalid");
-        assertThat(ex.getMessage()).isEqualTo("invalid");
+        IncorrectSamlException ex = new IncorrectSamlException("incorrect");
+        assertThat(ex.getMessage()).isEqualTo("incorrect");
     }
 
     @Test
     void causeConstructorShouldPreserveCause() {
         RuntimeException cause = new RuntimeException("root");
-        InvalidSamlToken ex = new InvalidSamlToken(cause);
+        IncorrectSamlException ex = new IncorrectSamlException(cause);
         assertThat(ex.getCause()).isSameAs(cause);
     }
 
     @Test
     void messageAndCauseConstructorShouldPreserveBoth() {
         RuntimeException cause = new RuntimeException("root");
-        InvalidSamlToken ex = new InvalidSamlToken("invalid", cause);
-        assertThat(ex.getMessage()).isEqualTo("invalid");
+        IncorrectSamlException ex = new IncorrectSamlException("incorrect", cause);
+        assertThat(ex.getMessage()).isEqualTo("incorrect");
         assertThat(ex.getCause()).isSameAs(cause);
     }
 }

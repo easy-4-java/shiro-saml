@@ -13,13 +13,13 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.apache.shiro.spring.boot.saml;
+package org.apache.shiro.saml;
 
 /**
  * SAML Authentication Context Comparison types that define how the identity provider
  * should evaluate the requested authentication context class.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public enum AuthnContextComparisonType {
 

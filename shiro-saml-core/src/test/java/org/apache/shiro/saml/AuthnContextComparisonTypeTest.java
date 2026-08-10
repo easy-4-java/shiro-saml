@@ -1,4 +1,4 @@
-package org.apache.shiro.spring.boot.saml;
+package org.apache.shiro.saml;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit tests for {@link AuthnContextComparisonType}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 class AuthnContextComparisonTypeTest {
 

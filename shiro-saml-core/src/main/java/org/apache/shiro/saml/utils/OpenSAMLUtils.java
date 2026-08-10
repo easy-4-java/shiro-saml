@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.apache.shiro.spring.boot.saml.utils;
+package org.apache.shiro.saml.utils;
 
 import javax.xml.namespace.QName;
 
@@ -25,7 +25,7 @@ import net.shibboleth.utilities.java.support.security.RandomIdentifierGeneration
 /**
  * Utilities for creating OpenSAML objects.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @SuppressWarnings("unchecked")
 public class OpenSAMLUtils {

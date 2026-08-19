@@ -51,17 +51,14 @@
         <maven.version>3.9.16</maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>1.0.x.20260630-SNAPSHOT</revision>
-
         <!-- ═══ Dependency versions（自然排序）═══ -->
         <easy4j-shiro-extension.version>1.0.x.20260630-SNAPSHOT</easy4j-shiro-extension.version>
         <java-support.version>7.3.0</java-support.version>
         <opensaml.version>3.4.2</opensaml.version>
         <shiro.version>1.13.0</shiro.version>
-
         <!-- ═══ Maven Plugin versions（自然排序）═══ -->
         <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
         <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
-    
     </properties>
     <dependencyManagement>
         <dependencies>

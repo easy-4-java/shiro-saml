@@ -16,7 +16,7 @@
     <scm>
         <connection>scm:git:https://github.com/easy-4-java/shiro-saml.git</connection>
         <developerConnection>scm:git:https://github.com/easy-4-java/shiro-saml.git</developerConnection>
-        <url>https://github.com/easy-4-java/shiro-saml</url><tag>HEAD</tag>
+        <url>https://github.com/easy-4-java/shiro-saml</url><tag>${project.artifactId}</tag>
     </scm>
     <developers><developer><name>Loong Wan</name><email>hiwepy@gmail.com</email><url>https://github.com/loong10k</url><roles><role>developer</role></roles><timezone>+8</timezone></developer></developers>
     <repositories>
@@ -24,8 +24,10 @@
         <repository><id>spring-release</id><url>https://build.shibboleth.net/nexus/content/repositories/releases/</url></repository>
     </repositories>
     <properties>
+        <!-- ═══ 第一段: 基础属性（自然排序）═══ -->
         <java.version>1.8</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
+        <maven.version>3.9.16</maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>1.0.x.20260630-SNAPSHOT</revision>
 
@@ -48,7 +50,7 @@
         <dependency><groupId>net.shibboleth.utilities</groupId><artifactId>java-support</artifactId><version>${java-support.version}</version></dependency>
     </dependencies></dependencyManagement>
     <build><plugins>
-        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>${maven-compiler-plugin.version}</version><configuration><source>${java.version}</source><target>${java.version}</target><parameters>true</parameters><encoding>${project.build.sourceEncoding}</encoding></configuration></plugin>
+        <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>${maven-compiler-plugin.version}</version><configuration><parameters>true</parameters><encoding>${project.build.sourceEncoding}</encoding></configuration></plugin>
         <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-source-plugin</artifactId><version>${maven-source-plugin.version}</version><executions><execution><id>attach-sources</id><goals><goal>jar-no-fork</goal></goals></execution></executions></plugin>
     </plugins></build>
     <distributionManagement>
